@@ -109,8 +109,8 @@ function activateDeleteListener(delBtn) {
 
 function activateMoreListeners() {
   const moreBtn = document.querySelectorAll('.three-dot');
-  moreBtn.forEach((mb) => {
-    mb.addEventListener('click', (e) => {
+  moreBtn.forEach((morebutton) => {
+    morebutton.addEventListener('click', (e) => {
       const clickedBtn = e.target;
       const parent = clickedBtn.parentNode;
       const delBtn = parent.getElementsByClassName('trash-icon')[0];
@@ -126,8 +126,8 @@ function activateMoreListeners() {
 
 function activateCheckboxListeners() {
   const checkboxInput = document.querySelectorAll('.checked');
-  checkboxInput.forEach((cbi) => {
-    cbi.addEventListener('change', (e) => {
+  checkboxInput.forEach((checkBoxInput) => {
+    checkBoxInput.addEventListener('change', (e) => {
       const clickedCheck = e.target;
       const parent = clickedCheck.parentNode;
       const taskIndex = parent.getElementsByClassName('task-index')[0].value;
